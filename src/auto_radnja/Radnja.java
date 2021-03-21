@@ -32,4 +32,16 @@ public interface Radnja {
 	 * 
 	 */
 	LinkedList<AutoGuma> pronadjiGumu(String markaModel);
+	/**
+	 * Vraca listu svih auto guma.
+	 * 
+	 * @return 
+	 * <ul>	
+	 * 		<li>Listu auto guma </li>
+	 * 		<li>Null, ako je lista null.</li>
+	 * </ul>
+	 * 
+	 * @throws java.lang.RuntimeException Ako je lista prazna.
+	 */
+	LinkedList<AutoGuma> vratiSveGume();
 }
