@@ -79,10 +79,10 @@ public class AutoGuma {
 	 * Postavlja precnik gume na novu vrednost.
 	 * 
 	 * @param precnik Precnik gume kao celobrojnu vrednost.
-	 * @throws java.lang.RuntimeException Ako je uneti precnik gume manji od 13 i veci od 22.
+	 * @throws java.lang.RuntimeException Ako je uneti precnik gume manji od 13 ili veci od 22.
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new RuntimeException("Precnik van opsega");
 		this.precnik = precnik;
 	}
@@ -98,10 +98,10 @@ public class AutoGuma {
 	 * Postavlja sirinu gume na novu vrednost.
 	 * 
 	 * @param sirina Sirina gume kao celobrojna vrednost.
-	 * @throws java.lang.RuntimeException Ako je sirina gume manja od 135 i veca od 355.
+	 * @throws java.lang.RuntimeException Ako je sirina gume manja od 135 ili veca od 355.
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355) 
 			throw new RuntimeException("Sirina van opsega");
 		this.sirina = sirina;
 	}
